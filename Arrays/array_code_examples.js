@@ -27,6 +27,31 @@ console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin',
 students.shift();
 console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 
+// slice
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.slice(3)); // ['Sumit', 'Bipin', 'Kelvin']
+console.log(students.slice(0,3)); // ['Abin', 'Arun', 'Alen']
+
+// filter
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.filter(el => el.endsWith('n'))); // [ 'Abin', 'Arun', 'Alen', 'Bipin', 'Kelvin' ]
+
+// splice
+const days = ['Wed', 'Thu', 'Fri', 'Sat'];
+days.splice(0,0,'Sun', 'Mon', 'Mon');
+console.log(days); // [ 'Sun', 'Mon', 'Mon', 'Wed', 'Thu', 'Fri', 'Sat' ]
+days.splice(2,1,'Tue');
+console.log(days); // [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ]
+
+// fill
+console.log(days); // [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ]
+days.fill('Fri',5);
+console.log(days); // [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Fri' ]
+days.fill('Sun',0,3);
+console.log(days); // [ 'Sun', 'Sun', 'Sun', 'Wed', 'Thu', 'Fri', 'Sat' ]
+
+
+
 // indexOf
 console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 console.log(students.indexOf("Sumit")); // 3
@@ -75,3 +100,4 @@ console.log(numbers); // [ 6, 5, 7, 4, 3, 2, 1 ]
 console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
 console.log(students.map(el => el.toUpperCase())); // [ 'ABIN', 'ALEN', 'ARUN', 'BIPIN', 'KELVIN', 'SUMIT' ]
 console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
+

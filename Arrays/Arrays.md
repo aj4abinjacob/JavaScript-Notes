@@ -58,7 +58,49 @@ Removes the *first* element from an array and returns it. If the array is empty,
 console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 students.shift()
 console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+```  
+
+### Taking parts from an array
+---
+#### slice
+The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified. 
+```JavaScript
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.slice(3)); // ['Sumit', 'Bipin', 'Kelvin']
+console.log(students.slice(0,3)); // ['Abin', 'Arun', 'Alen']
 ```
+
+#### filter
+```JavaScript
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.filter(el => el.endsWith('n'))); // [ 'Abin', 'Arun', 'Alen', 'Bipin', 'Kelvin' ]
+```
+
+### Replacing Elements
+---
+#### splice
+The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. To access part of an array without modifying it, see slice(). 
+```JavaScript
+// splice(start, deleteCount, item1)
+// splice(start, deleteCount, item1, item2, itemN) 
+const days = ['Wed', 'Thu', 'Fri', 'Sat'];
+days.splice(0,0,'Sun', 'Mon', 'Mon');
+console.log(days); // [ 'Sun', 'Mon', 'Mon', 'Wed', 'Thu', 'Fri', 'Sat' ]
+days.splice(2,1,'Tue');
+console.log(days); // [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ]
+```
+
+#### fill
+The fill() method changes all elements in an array to a static value, from a start index (default 0) to an end index (default array.length). It returns the modified array.
+```JavaScript
+console.log(days); // [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ]
+days.fill('Fri',5);
+console.log(days); // [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Fri' ]
+days.fill('Sun',0,3);
+console.log(days); // [ 'Sun', 'Sun', 'Sun', 'Wed', 'Thu', 'Fri', 'Sat' ]
+
+```
+
 
 ### Finding elements
 ---
@@ -137,7 +179,7 @@ console.log(numbers); // [ 6, 5, 7, 4, 3, 2, 1 ]
 ```
 
 ### Filtering and modifying based on multiple statements
-
+---
 ### map
 The map() method _creates a new array_ populated with the results of calling a provided function on every element in the calling array. 
 ```JavaScript
