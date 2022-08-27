@@ -40,7 +40,7 @@ console.log(students); // [ 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin', 'Ivan' ]
 students.unshift('Abhilash', 'Abin');
 console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin', 'Ivan']
 ```
-
+### Removing elements
 #### pop
 Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
 ```JavaScript
@@ -57,7 +57,7 @@ students.shift()
 console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 ```
 
-### Findinmg elements
+### Finding elements
 The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. 
 ```JavaScript
 // indexOf
