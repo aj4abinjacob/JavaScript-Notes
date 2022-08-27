@@ -22,6 +22,7 @@ console.log(number.length); // It prints 7 as the length
 >A JavaScript method is a property containing a function definition.
 
 ### Inserting elements
+---
 #### push
 The push() method adds one or more elements to the *end* of an array and returns the new length of the array. 
 ```JavaScript
@@ -40,8 +41,9 @@ console.log(students); // [ 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin', 'Ivan' ]
 students.unshift('Abhilash', 'Abin');
 console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin', 'Ivan']
 ```
----
+
 ### Removing elements
+---
 #### pop
 Removes the *last* element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
 ```JavaScript
@@ -57,8 +59,9 @@ console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin',
 students.shift()
 console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 ```
----
+
 ### Finding elements
+---
 #### indexOf
 The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. 
 ```JavaScript
