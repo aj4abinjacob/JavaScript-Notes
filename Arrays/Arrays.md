@@ -36,6 +36,7 @@ console.log(students); // [ 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin', 'Ivan' ]
 #### unshift  
 The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array. 
 ```JavaScript
+console.log(students); // [ 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin', 'Ivan' ]
 students.unshift('Abhilash', 'Abin');
 console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin', 'Ivan']
 ```
@@ -43,15 +44,25 @@ console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin',
 #### pop
 Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
 ```JavaScript
+console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin', 'Ivan']
 students.pop();
 console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 ```
 
-### shift
+#### shift
 Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
 ```JavaScript
+console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 students.shift()
 console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 ```
 
+### Findinmg elements
+The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. 
+```JavaScript
+// indexOf
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.indexOf("Sumit")); // 3
+console.log(students.indexOf("Paul")); // -1
+```
 
