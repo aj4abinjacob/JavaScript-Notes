@@ -31,4 +31,27 @@ console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 console.log(students.indexOf("Sumit")); // 3
 console.log(students.indexOf("Paul")); // -1
-// 
+
+// at
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.at(-2)); // Bipin
+console.log(students.at(1)) // Arun
+
+// includes
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.includes('Abin')); // true
+console.log(students.includes('Tony')); // false
+
+// find
+const birth_year = [1999,1987,2000,2001,1995,2005,1975];
+const born_after_2000 = birth_year.find(el => el > 2000);
+console.log(born_after_2000); // 2001
+console.log(birth_year.find(el => el > 2022)); // undefined
+
+// findIndex()
+console.log(birth_year); // [1999,1987,2000,2001,1995,2005,1975];
+console.log(birth_year.findIndex(el => el > 2000)); // 3
+console.log(birth_year.findIndex(el => el > 2022)); // -1 
+
+
+
