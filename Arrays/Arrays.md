@@ -1,6 +1,39 @@
 # Arrays
 An array is a JavaScript object used for storing collection of items under a single variable. It can be used for storing string, number, other objects, arrays etc. Array index starts from __Zero__ in JavaScript.
 
+1. [Array Properties](#array-properties)
+    - [length](#length)
+2. [Array Methods](#array-methods)
+    1. [Inserting elements](#Inserting-elements)
+        - [push](#push)  
+        - [unshift](#unshift)  
+    2. [Removing elements](#Removing-elements)
+        - [pop](#pop)  
+        - [shift](#shift)  
+    3. [Taking parts from an array](#Taking-parts-from-an-array)
+        - [slice](#slice)  
+    4. [Replacing elements](#Replacing-Elements)
+        - [splice](#splice)  
+        - [fill](#fill)  
+    5. [Finding elements](#Finding-elements)
+        - [indexOf](#indexOf)  
+        - [at](#at)  
+        - [includes](#includes)  
+        - [find](#find)  
+        - [findIndex](#findIndex)  
+    6. [Condtional checks](#Condtional-Checks)
+        - [every](#every)  
+        - [some](#some)  
+    7. [Changing order](#Changing-Order)
+        - [sort](#sort)  
+        - [reverse](#reverse)  
+    8. [Filtering and modifying based on multiple statements](#Filtering-and-modifying-based-on-multiple-statements)
+        - [filter](#filter)  
+        - [map](#map)  
+        - [reduce](#reduce)  
+    9. [Array to string](#Array-to-String)
+        - [toStringandjoin](#toString-and-join)  
+
 
 ```JavaScript
 const countries = ['India', 'Nepal', 'Germany', 'Canada'];
@@ -173,7 +206,6 @@ console.log(numbers); // [ 6, 5, 7, 4, 3, 2, 1 ]
 
 ### Filtering and modifying based on multiple statements
 ---
-### map
 
 #### filter
 Returns the elements of an array that meet the condition specified in a callback function.
@@ -182,6 +214,7 @@ console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 console.log(students.filter(el => el.endsWith('n'))); // [ 'Abin', 'Arun', 'Alen', 'Bipin', 'Kelvin' ]
 ```
 
+#### map
 The map() method _creates a new array_ populated with the results of calling a provided function on every element in the calling array. 
 ```JavaScript
 console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
@@ -189,7 +222,7 @@ console.log(students.map(el => el.toUpperCase())); // [ 'ABIN', 'ALEN', 'ARUN', 
 console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
 ```
 
-### reduce
+#### reduce
 ```JavaScript
 console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
 console.log(students.reduce((p,c)=>`${p}`+` ${c} `,"These are all the students")); // These are all the students Abin  Alen  Arun  Bipin  Kelvin  Sumit
@@ -197,7 +230,7 @@ console.log(students.reduce((p,c)=>`${p}`+` ${c} `,"These are all the students")
 
 
 ### Array to String
-### toString and join
+#### toString and join
 The Array object overrides the toString method of Object. The toString method of arrays calls join() internally, which joins the array and returns one string containing each array element separated by commas. If the join method is unavailable or is not a function, Object.prototype.toString is used instead, returning [object Array]
 ```JavaScript
 const array1 = [1, 2, 'a', '1a'];
