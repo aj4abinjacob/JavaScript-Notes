@@ -102,3 +102,47 @@ console.log(birth_year.findIndex(el => el > 2000)); // 3
 console.log(birth_year.findIndex(el => el > 2022)); // -1 
 ```
 
+### Condtional Checks
+---
+#### every
+Determines whether all the members of an array satisfy the specified test.
+```JavaScript
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.every(el => el.startsWith('A'))); // false
+```  
+  
+#### some
+Determines whether the specified callback function returns true for any element of an array.
+```JavaScript
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.some(el => el.startsWith('A'))); // true
+```
+
+### Changing Order
+---
+#### sort
+The sort() method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon _converting the elements into strings_, then comparing their sequences of UTF-16 code units values.
+```JavaScript
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+students.sort();
+console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
+```
+
+#### reverse
+Elements order in the array will be turned towards the direction opposite to that previously stated.This method mutates the array and returns a reference to the same array.
+```JavaScript
+numbers = [1, 2, 3, 4, 7, 5, 6]; 
+numbers.reverse();
+console.log(numbers); // [ 6, 5, 7, 4, 3, 2, 1 ]
+```
+
+### Filtering and modifying based on multiple statements
+
+### map
+The map() method _creates a new array_ populated with the results of calling a provided function on every element in the calling array. 
+```JavaScript
+console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
+console.log(students.map(el => el.toUpperCase())); // [ 'ABIN', 'ALEN', 'ARUN', 'BIPIN', 'KELVIN', 'SUMIT' ]
+console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
+```
+

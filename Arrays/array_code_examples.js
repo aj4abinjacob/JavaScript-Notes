@@ -1,6 +1,6 @@
 
 // Array length property
-const numbers = [1, 2, 3, 4, 5, 6, 7];
+let numbers = [1, 2, 3, 4, 5, 6, 7];
 console.log(numbers.length);
 
 // Array methods
@@ -48,10 +48,30 @@ const born_after_2000 = birth_year.find(el => el > 2000);
 console.log(born_after_2000); // 2001
 console.log(birth_year.find(el => el > 2022)); // undefined
 
-// findIndex()
+// findIndex
 console.log(birth_year); // [1999,1987,2000,2001,1995,2005,1975];
 console.log(birth_year.findIndex(el => el > 2000)); // 3
 console.log(birth_year.findIndex(el => el > 2022)); // -1 
 
+// every
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.every(el => el.startsWith('A'))); // false
 
+// some
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.some(el => el.startsWith('A'))); // true
 
+// sort
+console.log(students); // [ 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+students.sort();
+console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
+
+// reverse
+numbers = [1, 2, 3, 4, 7, 5, 6]; 
+numbers.reverse();
+console.log(numbers); // [ 6, 5, 7, 4, 3, 2, 1 ]
+
+// map
+console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
+console.log(students.map(el => el.toUpperCase())); // [ 'ABIN', 'ALEN', 'ARUN', 'BIPIN', 'KELVIN', 'SUMIT' ]
+console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
