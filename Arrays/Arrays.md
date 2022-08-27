@@ -40,6 +40,7 @@ console.log(students); // [ 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin', 'Ivan' ]
 students.unshift('Abhilash', 'Abin');
 console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin', 'Ivan']
 ```
+---
 ### Removing elements
 #### pop
 Removes the *last* element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
@@ -56,7 +57,7 @@ console.log(students); // ['Abhilash', 'Abin', 'Arun', 'Alen', 'Sumit', 'Bipin',
 students.shift()
 console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 ```
-
+---
 ### Finding elements
 #### indexOf
 The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. 
@@ -95,5 +96,6 @@ Returns the index of the first element in the array where predicate is true, and
 ```JavaScript
 console.log(birth_year); // [1999,1987,2000,2001,1995,2005];
 console.log(birth_year.findIndex(el => el > 2000)); // 3
+console.log(birth_year.findIndex(el => el > 2022)); // -1 
 ```
 
