@@ -50,8 +50,6 @@ console.log(days); // [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Fri' ]
 days.fill('Sun',0,3);
 console.log(days); // [ 'Sun', 'Sun', 'Sun', 'Wed', 'Thu', 'Fri', 'Sat' ]
 
-
-
 // indexOf
 console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 console.log(students.indexOf("Sumit")); // 3
@@ -101,3 +99,11 @@ console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
 console.log(students.map(el => el.toUpperCase())); // [ 'ABIN', 'ALEN', 'ARUN', 'BIPIN', 'KELVIN', 'SUMIT' ]
 console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
 
+// reduce
+console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
+console.log(students.reduce((p,c)=>`${p}`+` ${c} `,"These are all the students")); // These are all the students Abin  Alen  Arun  Bipin  Kelvin  Sumit
+
+// toString & Join
+const array1 = [1, 2, 'a', '1a'];
+array1.toString(); //"1,2,a,1a" 
+array1.join('-'); //"1-2-a-1a"

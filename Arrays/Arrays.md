@@ -187,3 +187,19 @@ console.log(students.map(el => el.toUpperCase())); // [ 'ABIN', 'ALEN', 'ARUN', 
 console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
 ```
 
+### reduce
+```JavaScript
+console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
+console.log(students.reduce((p,c)=>`${p}`+` ${c} `,"These are all the students")); // These are all the students Abin  Alen  Arun  Bipin  Kelvin  Sumit
+```
+
+
+### Array to String
+### toString and join
+The Array object overrides the toString method of Object. The toString method of arrays calls join() internally, which joins the array and returns one string containing each array element separated by commas. If the join method is unavailable or is not a function, Object.prototype.toString is used instead, returning [object Array]
+```JavaScript
+const array1 = [1, 2, 'a', '1a'];
+array1.toString(); //"1,2,a,1a" 
+array1.join('-'); //"1-2-a-1a"
+```
+
