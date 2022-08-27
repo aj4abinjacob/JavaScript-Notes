@@ -32,9 +32,6 @@ console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 console.log(students.slice(3)); // ['Sumit', 'Bipin', 'Kelvin']
 console.log(students.slice(0,3)); // ['Abin', 'Arun', 'Alen']
 
-// filter
-console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
-console.log(students.filter(el => el.endsWith('n'))); // [ 'Abin', 'Arun', 'Alen', 'Bipin', 'Kelvin' ]
 
 // splice
 const days = ['Wed', 'Thu', 'Fri', 'Sat'];
@@ -93,6 +90,10 @@ console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
 numbers = [1, 2, 3, 4, 7, 5, 6]; 
 numbers.reverse();
 console.log(numbers); // [ 6, 5, 7, 4, 3, 2, 1 ]
+
+// filter
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.filter(el => el.endsWith('n'))); // [ 'Abin', 'Arun', 'Alen', 'Bipin', 'Kelvin' ]
 
 // map
 console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]

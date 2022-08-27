@@ -1,6 +1,6 @@
 # Arrays
-
 An array is a JavaScript object used for storing collection of items under a single variable. It can be used for storing string, number, other objects, arrays etc. Array index starts from __Zero__ in JavaScript.
+
 
 ```JavaScript
 const countries = ['India', 'Nepal', 'Germany', 'Canada'];
@@ -67,12 +67,6 @@ The slice() method returns a shallow copy of a portion of an array into a new ar
 console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
 console.log(students.slice(3)); // ['Sumit', 'Bipin', 'Kelvin']
 console.log(students.slice(0,3)); // ['Abin', 'Arun', 'Alen']
-```
-
-#### filter
-```JavaScript
-console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
-console.log(students.filter(el => el.endsWith('n'))); // [ 'Abin', 'Arun', 'Alen', 'Bipin', 'Kelvin' ]
 ```
 
 ### Replacing Elements
@@ -180,6 +174,14 @@ console.log(numbers); // [ 6, 5, 7, 4, 3, 2, 1 ]
 ### Filtering and modifying based on multiple statements
 ---
 ### map
+
+#### filter
+Returns the elements of an array that meet the condition specified in a callback function.
+```JavaScript
+console.log(students); // ['Abin', 'Arun', 'Alen', 'Sumit', 'Bipin', 'Kelvin']
+console.log(students.filter(el => el.endsWith('n'))); // [ 'Abin', 'Arun', 'Alen', 'Bipin', 'Kelvin' ]
+```
+
 The map() method _creates a new array_ populated with the results of calling a provided function on every element in the calling array. 
 ```JavaScript
 console.log(students); // [ 'Abin', 'Alen', 'Arun', 'Bipin', 'Kelvin', 'Sumit' ]
