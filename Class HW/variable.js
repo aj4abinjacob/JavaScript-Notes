@@ -71,3 +71,32 @@ console.log(current_date.getHours());
 console.log(current_date.getMinutes());
 //     - Find out the numbers of seconds elapsed from January 1, 1970 to now.
 console.log(Math.floor(current_date.getTime() / 1000));
+
+
+// 13. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
+// const readline = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout,
+// });
+
+
+// readline.question(`Enter the base and height separated by comma?`, input => {
+//     console.log(`Hi you triangle's area is ${0.5 * input.split(",").reduce((p, c) => p * c)}!`);
+//     readline.close();
+// });
+
+// 14. Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+console.log(((10 - 2) / (6 - 2)));
+
+// 16. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
+// readline.question("Enter the radius : ", radius => {console.log(`Area of the circle is ${(2 * Math.PI * radius)}`);
+// readline.close()});
+
+// 17. Create a human readable time format using the Date time object
+//     - YYYY-MM-DD HH:mm
+console.log(current_date.toISOString().split("T")[0], `${current_date.getHours()}:${current_date.getMinutes()}`)
+//     - DD-MM-YYYY HH:mm
+console.log(current_date.toLocaleString().replace(/\//g, "-").split(",")[0], `${current_date.getHours()}:${current_date.getMinutes()}`)
+//     - DD/MM/YYYY HH:mm
+console.log(current_date.toLocaleDateString(), `${current_date.getHours()}:${current_date.getMinutes()}`);
+
