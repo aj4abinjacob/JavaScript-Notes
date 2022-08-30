@@ -100,3 +100,43 @@ console.log(current_date.toLocaleString().replace(/\//g, "-").split(",")[0], `${
 //     - DD/MM/YYYY HH:mm
 console.log(current_date.toLocaleDateString(), `${current_date.getHours()}:${current_date.getMinutes()}`);
 
+// 18. Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive' but if not 18 give another feedback stating to wait for the number of years he needs to turn 18.
+// let age = prompt("Enter your age: ");
+// if (age >= 18){
+//     alert("Your are old enough to drive");
+// }else{
+//     alert(`Please wait for ${18-age} years for driving.`)
+// };
+
+// 19. Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
+// const number1 = prompt("Enter a number: ");
+// const is_even = number1 % 2 === 0 ? "is even" : "not even";
+// alert(is_even);
+
+// 20. Write a code which can give grades to students according to theirs scores:
+//     - 80-100, A
+//     - 70-89, B
+//     - 60-69, C
+//     - 50-59, D
+//     - 0-49, F
+// const user_grade = prompt("Enter your grade : ");
+// switch(true){
+//     case (Number(user_grade) >= 90): 
+//         alert("A");
+//         break
+//     case (Number(user_grade) >= 70): 
+//         alert("B");
+//         break
+//     case (Number(user_grade) >= 60): 
+//         alert("C");
+//         break
+//     case (Number(user_grade) >= 50): 
+//         alert("D");
+//         break
+//     case (Number(user_grade) >= 0): 
+//         alert("F");
+//         break
+//     default:
+//         alert("Enter proper value");
+
+// }
