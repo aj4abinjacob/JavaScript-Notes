@@ -169,10 +169,27 @@ console.log(current_date.toLocaleDateString(), `${current_date.getHours()}:${cur
 // 22. Write a program which tells the number of days in a month.
 // 23. Write a program which tells the number of days in a month, now consider leap year.
 
-const month_input = prompt("Enter year and month seperated by - : ");
-function getNumberOfDays(inputs){
-    const mon = new Date(Number(inputs[0]), Number(inputs[1]), 0);
-    console.log(mon.toDateString())
-    return mon.getDate();
-}
-alert(`Number of days : ${getNumberOfDays(month_input.split("-"))}`);
+// const month_input = prompt("Enter year and month seperated by - : ");
+// function getNumberOfDays(inputs){
+//     const mon = new Date(Number(inputs[0]), Number(inputs[1]), 0);
+//     console.log(mon.toDateString())
+//     return mon.getDate();
+// }
+// alert(`Number of days : ${getNumberOfDays(month_input.split("-"))}`);
+
+// 25. In the following shopping cart add, remove, edit items
+//     => const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+//     - add 'Meat' in the beginning of your shopping cart if it has not been already added
+//     - add Sugar at the end of you shopping cart if it has not been already added
+//     - remove 'Honey' if you are allergic to honey
+//     - modify Tea to 'Green Tea'
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
+if (!shoppingCart.includes("Meat")) shoppingCart.unshift("Meat");
+console.log(shoppingCart);
+if (!shoppingCart.includes("Sugar")) shoppingCart.push("Sugar");
+console.log(shoppingCart);
+const is_alergic_to_honey = prompt("Are you alergic to honey?[Y/N]")
+if (is_alergic_to_honey.toLowerCase().includes("y")) shoppingCart.splice(shoppingCart.indexOf("Honey"),1);
+console.log(shoppingCart);
+if (shoppingCart.indexOf("Tea") > -1) shoppingCart[shoppingCart.indexOf("Tea")] = "Green Tea";
+console.log(shoppingCart);
