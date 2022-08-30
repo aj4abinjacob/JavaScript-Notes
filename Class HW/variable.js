@@ -140,3 +140,39 @@ console.log(current_date.toLocaleDateString(), `${current_date.getHours()}:${cur
 //         alert("Enter proper value");
 
 // }
+
+
+// 21. Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
+//     - September, October or November, the season is Autumn.
+//     - December, January or February, the season is Winter.
+//     - March, April or May, the season is Spring
+//     - June, July or August, the season is Summer
+// const month_input = prompt("Enter month : ");
+// switch(true){
+//     case ("September, October, November".split(", ").includes(month_input)):
+//         alert("Season is Autumn");
+//         break;
+//     case ("December, January, February".split(", ").includes(month_input)):
+//         alert("Season is Winter");
+//         break;
+//     case ("March, April, May".split(", ").includes(month_input)):
+//         alert("Season is Spring");
+//         break;
+//     case ("June, July, August".split(", ").includes(month_input)):
+//         alert("Season is Summer");
+//         break;
+//     default:
+//         alert("Please enter proper value");
+//         break;
+// }
+
+// 22. Write a program which tells the number of days in a month.
+// 23. Write a program which tells the number of days in a month, now consider leap year.
+
+const month_input = prompt("Enter year and month seperated by - : ");
+function getNumberOfDays(inputs){
+    const mon = new Date(Number(inputs[0]), Number(inputs[1]), 0);
+    console.log(mon.toDateString())
+    return mon.getDate();
+}
+alert(`Number of days : ${getNumberOfDays(month_input.split("-"))}`);
