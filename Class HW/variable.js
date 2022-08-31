@@ -242,4 +242,36 @@ console.log(`Odd Sum : ${odd_sum}`);
 
 // 30. Write a script which generates a random hexadecimal number.
 const rand_decimal = Math.floor(Math.random()*100)
-console.log(rand_decimal," : ",rand_decimal.toString(16))
+console.log(rand_decimal," : ",rand_decimal.toString(16));
+
+// 33. Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
+//     - The same groups apply to both men and women.
+//     - Underweight: BMI is less than 18.5
+//     - Normal weight: BMI is 18.5 to 24.9
+//     - Overweight: BMI is 25 to 29.9
+//     - Obese: BMI is 30 or more
+// const readline = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout,
+// });
+// let weight;
+// readline.question('What is your height? ', (input) => {
+//     // height = input;
+//     let height =  input;
+//     readline.close();
+// });
+// // readline.question("Enter your weight : ",(el) => {
+// //     weight =  el;
+// //     readline.close();
+// // })
+// // const bmi = weight / (height**2);
+// console.log(height);
+
+// 35. Write a functions which checks if all items are unique in the array.
+function unique(arr){
+   const freq =  arr.reduce((acc, curr) => (acc[curr] = (acc[curr] || 0) + 1, acc), {});
+   console.log(Object.values(freq))
+   return Math.max(...Object.values(freq)) === 1 ? true : false;
+}
+console.log(unique([1,2]));
+console.log(unique([1,2,2]));
