@@ -183,13 +183,63 @@ console.log(current_date.toLocaleDateString(), `${current_date.getHours()}:${cur
 //     - add Sugar at the end of you shopping cart if it has not been already added
 //     - remove 'Honey' if you are allergic to honey
 //     - modify Tea to 'Green Tea'
-const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
-if (!shoppingCart.includes("Meat")) shoppingCart.unshift("Meat");
-console.log(shoppingCart);
-if (!shoppingCart.includes("Sugar")) shoppingCart.push("Sugar");
-console.log(shoppingCart);
-const is_alergic_to_honey = prompt("Are you alergic to honey?[Y/N]")
-if (is_alergic_to_honey.toLowerCase().includes("y")) shoppingCart.splice(shoppingCart.indexOf("Honey"),1);
-console.log(shoppingCart);
-if (shoppingCart.indexOf("Tea") > -1) shoppingCart[shoppingCart.indexOf("Tea")] = "Green Tea";
-console.log(shoppingCart);
+// const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
+// if (!shoppingCart.includes("Meat")) shoppingCart.unshift("Meat");
+// console.log(shoppingCart);
+// if (!shoppingCart.includes("Sugar")) shoppingCart.push("Sugar");
+// console.log(shoppingCart);
+// const is_alergic_to_honey = prompt("Are you alergic to honey?[Y/N]")
+// if (is_alergic_to_honey.toLowerCase().includes("y")) shoppingCart.splice(shoppingCart.indexOf("Honey"),1);
+// console.log(shoppingCart);
+// if (shoppingCart.indexOf("Tea") > -1) shoppingCart[shoppingCart.indexOf("Tea")] = "Green Tea";
+// console.log(shoppingCart);
+
+// 27. The following is an array of 10 students ages:
+//     => const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+//     - Sort the array and find the min and max age
+//     - Find the median age(one middle item or two middle items divided by two)
+//     - Find the average age(all items divided by number of items)
+//     - Find the range of the ages(max minus min)
+//     - Compare the value of (min - average) and (max - average), use abs() method
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+ages.sort();
+console.log(ages);
+const min_age = Math.min(...ages);
+const max_age = Math.max(...ages);
+console.log("Min Age :",Math.min(...ages));
+console.log("Max Age :",Math.max(...ages));
+const median = ages.length % 2 == 0 ? (ages[Math.floor(ages.length/2)]+ ages[Math.ceil(ages.length/2)])/2 : ages[Math.floor(ages.length/2)];
+console.log("Median :",median);
+const average = (ages.reduce((p,c)=>p+c))/ages.length;
+console.log("Average :",average);
+console.log("Range :", Math.max(...ages)-Math.min(...ages));
+console.log(Math.abs((min_age-average),(max_age-average)));
+
+// 28. Use for loop to iterate from 0 to 100 and print only prime numbers
+const checkPrime = (num) => {
+    if (num <= 1 ) return false;
+
+    for (let i = 2; i < num; i++)
+    if (num % i == 0) return false;
+
+    return true;
+}
+
+for (let i = 0; i <= 100; i++){
+    if (checkPrime(i)) console.log(i);
+}
+
+// 29. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+
+let odd_sum = 0;
+let even_sum = 0;
+for (let i = 0; i <= 100; i++){
+    ( i % 2 ==0 ) ? even_sum += i : odd_sum += i;
+    // process.stdout.write(`\rEven Sum : ${even_sum}`);
+}
+console.log(`Even Sum : ${even_sum}`);
+console.log(`Odd Sum : ${odd_sum}`);
+
+// 30. Write a script which generates a random hexadecimal number.
+const rand_decimal = Math.floor(Math.random()*100)
+console.log(rand_decimal," : ",rand_decimal.toString(16))

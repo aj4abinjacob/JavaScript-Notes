@@ -1,2 +1,2 @@
-const countries = [ "India", "China", "Russia", "South Korea" ];
-export { countries };
+exports.countries = [ "India", "China", "Russia", "South Korea" ];
+// export { countries };
