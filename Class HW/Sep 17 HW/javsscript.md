@@ -20,10 +20,10 @@
 
 ### Code
 ```JavaScript
-document.querySelectorAll("h2 > a.c-link")[1].textContent = 'Abin Jacob';
-document.querySelectorAll("p.mb-4")[1] = "I am a tech enthusiast aiming to become a full stack developer.";
+document.querySelector(".side-bar h2").innerHTML = "Abin Jacob";
+document.querySelector(".side-bar P").innerHTML = "I am a tech enthusiast aiming to become a full stack developer.";
 ```
-
+![Answer 1](./Answer1.png)
 
 2. Website Name: [Apple](https://support.apple.com/en-in)
 
@@ -41,6 +41,7 @@ document.querySelectorAll("p.mb-4")[1] = "I am a tech enthusiast aiming to becom
 ```JavaScript
 let apple_products = Array.from(document.querySelectorAll("span.as-imagegrid-item-title")).map((el) => el.textContent.replace(' Support',''));
 console.log(apple_products);
+// ['iPhone', 'Mac', 'iPad', 'Watch', 'AirPods', 'Music', 'TV']
 ```
 
 3. Webiste Name: [Youtube Support](https://support.google.com/youtube/)
@@ -436,6 +437,12 @@ document.querySelector(".btn-container").innerHTML = now;
 
 ![Output](./Pic35.png)
 
+### Code
+```JavaScript
+document.querySelector("footer").style.background = "hsl(39, 100%, 50%)";
+```
+![Answer 18](./Answer18.png)
+
 19. Webiste Name: [Canon](https://in.canon/)
 
 ### Topics
@@ -454,6 +461,12 @@ document.querySelector(".btn-container").innerHTML = now;
 
 ![Output](./Pic37.png)
 
+### Code
+```JavaScript
+console.log(document.querySelector(".navbar-brand img").src);
+// 'https://in.canon/assets/brand/logo-300-002e45a4aec98fd92899838da9d5560f.png'
+```
+
 20. Webiste Name: [Oppo](https://www.oppo.com/in/)
 
 ### Topics
@@ -471,3 +484,9 @@ document.querySelector(".btn-container").innerHTML = now;
 ### Output
 
 ![Output](./Pic39.png)
+
+### Code
+```JavaScript
+document.querySelector(".desc").style.color = "orange";
+```
+![Answer 20](./Answer20.png)
