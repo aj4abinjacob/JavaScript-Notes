@@ -264,6 +264,15 @@ document.querySelector(".btn-cta-big").addEventListener("mouseover",()=> documen
 
 ![Output](./Pic21.png)
 
+### Code
+```JavaScript
+// Remove class which displays icon
+document.querySelector(".icon.icon-logo.in").classList.remove("icon-logo");
+// Add img tag to inner html of span
+document.querySelector(".icon.in").innerHTML = `<img src="https://ineuron.ai/images/ineuron-logo.png" alt="ineuron" style="width: 100px;">`;
+```
+![Answer 11](./Answer11.png)
+
 12. Webiste Name: [Github](https://github.com/)
 
 ### Topics
@@ -281,6 +290,12 @@ document.querySelector(".btn-cta-big").addEventListener("mouseover",()=> documen
 ### Output
 
 ![Output](./Pic23.png)
+
+### Code
+```JavaScript
+document.querySelector(".btn-primary.btn").style.backgroundColor = "hsl(240, 68%, 48%)";
+```
+![Answer 12](./Answer12.png)
 
 13. Webiste Name: [Hackerrank](https://www.hackerrank.com/)
 
@@ -300,6 +315,12 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic25.png)
 
+### Code
+```JavaScript
+document.querySelector(".fl-heading-text").innerHTML = "JSBOOTCAMP";
+```
+![Answer 13](./Answer13.png)
+
 14. Webiste Name: [Asus](https://www.asus.com/in/)
 
 ### Topics
@@ -317,6 +338,13 @@ Target the top description and change “Matching developers with great companie
 ### Output
 
 ![Output](./Pic27.png)
+
+### Code
+```JavaScript
+document.querySelector(".HotDealsAll__Heading__2fIbe").style.fontSize = "80px";
+```
+![Answer 14](./Answer14.png)
+
 
 15. Webiste Name: [Dell](https://www.dell.com/en-in/shop/deals/laptop-deals?gacd=10415953-9016-5761040-285981356-0&dgc=ST&gclid=Cj0KCQjwguGYBhDRARIsAHgRm4-XUDMhhVNyHXb3s1gY4ZBzORr_d9Se-buhJwy7asyUe7YdqEA11eEaAt6UEALw_wcB&gclsrc=aw.ds&nclid=BxjBlpBQsX6pjSHh-L8YYSU77EpfXRkG1AGMB5Wbeu386ykspfrPDnfx_DdFau20)
 
