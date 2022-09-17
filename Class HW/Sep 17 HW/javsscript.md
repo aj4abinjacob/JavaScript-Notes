@@ -364,6 +364,12 @@ document.querySelector(".HotDealsAll__Heading__2fIbe").style.fontSize = "80px";
 
 ![Output](./Pic29.png)
 
+### Code
+```JavaScript
+Array.from(document.querySelectorAll(".ps-title")).forEach((el) => {if (el.textContent.toLowerCase().includes("g15"))el.style.textAlign = "right"});
+```
+![Answer 15](./Answer15.png)
+
 16. Webiste Name: [Vercel](https://vercel.com/)
 
 ### Topics
@@ -382,6 +388,12 @@ document.querySelector(".HotDealsAll__Heading__2fIbe").style.fontSize = "80px";
 
 ![Output](./Pic31.png)
 
+### Code
+```JavaScript
+document.querySelector(".section-title_title__VEDfK").textContent = "Start with Scratch";
+```
+![Answer 16](./Answer16.png)
+
 17. Webiste Name: [Sony](https://www.sony.co.in/)
 
 ### Topics
@@ -399,6 +411,12 @@ document.querySelector(".HotDealsAll__Heading__2fIbe").style.fontSize = "80px";
 ### Output
 
 ![Output](./Pic32.png)
+### Code
+```JavaScript
+let now = new Date();
+document.querySelector(".btn-container").innerHTML = now;
+```
+![Answer 17](./Answer17.png)
 
 18. Webiste Name: [Philips](https://www.philips.co.in/)
 
