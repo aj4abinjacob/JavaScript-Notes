@@ -21,11 +21,14 @@ const faqData = [
 // const accordianBody;
 const faqs = [];
 
+
 function createFaq(data) {
   let card_div = document.createElement('div');
   card_div.innerHTML = `<div class="faq_header">
                           <h3>${data['question']}</h3>
-                          <button class="show_btn"></button>
+                          <button class="show_btn">
+                          <i class="fa-solid fa-plus"></i>
+                          </button>
                         </div>
                         <p class="hidden">${data['answer']}</p>
                         `
@@ -40,8 +43,10 @@ document.querySelectorAll(".show_btn").forEach(el => {
     console.log(parent);
     if (parent.querySelector("p").style.display === '') {
       parent.querySelector("p").style.display = "block";
+      event.currentTarget.innerHTML = '<i class="fa-solid fa-minus"></i>';
     } else {
       parent.querySelector("p").style.display = "";
+      event.currentTarget.innerHTML = '<i class="fa-solid fa-plus"></i>';
     }
   })
 })
