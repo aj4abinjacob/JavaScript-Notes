@@ -1,0 +1,114 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* A video explaining why box-sizing should be set to border-box */
+/* https://www.youtube.com/watch?v=WlGQdgy-M6w */
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* The font inherit property sets every font to have one size and one weight
+any heading tag would look the sane as a normal text, this forces the user to
+use css for everything.
+*/
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background: #1c1c1c;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.big {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+    gap: 20px;
+}
+
+input {
+    font-size: large;
+}
+
+.card {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.fa-regular {
+    display: none;
+}
+
+input {
+    border-radius: 8px;
+    width: 450px;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    background: #0a46e4;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+
+input {
+    color: rgb(36, 35, 42);
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 28px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+    background: rgb(251, 251, 251);
+    transition: all 0.1s ease 0s;
+}
+
+.def {
+    display: flex;
+    justify-content: center;
+}
+
+dd {
+    font-style: italic;
+}
