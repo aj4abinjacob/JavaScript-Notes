@@ -3,7 +3,9 @@ const to_do_array = [];
 const input_text = document.querySelector("input");
 
 function rmParent(el) {
+    document.querySelector(".completed-tasks").appendChild(el.parentElement.cloneNode(true));
     el.parentElement.remove();
+
 }
 
 function createCard() {
@@ -31,5 +33,6 @@ document.querySelector('#add').addEventListener('click', () => {
         alert("Please enter a proper task");
     } else {
         createCard();
+        input_text.value = '';
     }
 })
