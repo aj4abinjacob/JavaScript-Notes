@@ -27,5 +27,9 @@ function createCard() {
 
 
 document.querySelector('#add').addEventListener('click', () => {
-    createCard();
+    if (input_text.value.replace(/\s/g, "").length === 0) {
+        alert("Please enter a proper task");
+    } else {
+        createCard();
+    }
 })
