@@ -1,0 +1,94 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* A video explaining why box-sizing should be set to border-box */
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* The font inherit property sets every font to have one size and one weight
+any heading tag would look the sane as a normal text, this forces the user to
+use css for everything.
+*/
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #1c1c1c;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#add {
+    --border-radius: 35px;
+    width: var(--border-radius);
+    height: var(--border-radius);
+    border-radius: 50%;
+    background-color: #1FAA59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.cards-container {
+    width: 45%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-top: 50px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid red;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    font-size: 1.2rem;
+}
+
+.mini-container {
+    width: 95%;
+    height: 100px;
+    background-color: #363636;
+    border-radius: 16px;
+}
