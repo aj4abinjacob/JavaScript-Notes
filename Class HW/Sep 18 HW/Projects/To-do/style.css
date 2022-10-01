@@ -103,10 +103,12 @@ input {
 
 
 
-.rm {
+.input_controls {
     position: absolute;
     right: 20px;
     top: 5px;
+    display: flex;
+    gap: 10px;
 }
 
 .cards-container {
@@ -126,6 +128,19 @@ input {
     height: var(--border-radius);
     border-radius: 50%;
     background-color: #f72e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.done {
+    --border-radius: 35px;
+    width: var(--border-radius);
+    height: var(--border-radius);
+    border-radius: 50%;
+    background-color: #225af3;
     display: flex;
     justify-content: center;
     align-items: center;

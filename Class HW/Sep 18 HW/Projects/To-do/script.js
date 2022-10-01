@@ -3,27 +3,35 @@ const to_do_array = [];
 const input_text = document.querySelector("input");
 
 function rmParent(el) {
-    document.querySelector(".completed-tasks").appendChild(el.parentElement.cloneNode(true));
-    el.parentElement.remove();
+    el.parentElement.parentElement.remove();
+}
 
+function addCompletedTask(el) {
+    document.querySelector(".completed-tasks").appendChild(el.parentElement.parentElement.cloneNode(true));
+    el.parentElement.parentElement.remove();
 }
 
 function createCard() {
     const text = input_text.value;
     const mini_container = document.createElement('div');
     mini_container.classList.add('mini-container');
-    const rm_btn = document.createElement('div');
-    rm_btn.innerHTML = `<div class="rm">
+    const input_btn = document.createElement('div');
+    input_btn.classList.add('input_controls')
+    input_btn.innerHTML = `    
+                        <div class="rm" onclick="rmParent(this)">
                             <i class="fa-solid fa-minus"></i>
                         </div>
+                        <div class="done" onclick="addCompletedTask(this)">
+                            <i class="fa-solid fa-check"></i>
+                        </div
                         `
-    rm_btn.setAttribute('onclick', `rmParent(this)`)
+    // rm_btn.setAttribute('onclick', `rmParent(this)`)
 
     const card = document.createElement('div');
     card.classList.add('card');
     card.innerHTML = `<p>${text}</p>`
     mini_container.appendChild(card);
-    mini_container.appendChild(rm_btn);
+    mini_container.appendChild(input_btn);
     card_container.appendChild(mini_container)
 }
 
