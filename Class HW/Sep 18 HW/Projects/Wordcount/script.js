@@ -1,0 +1,4 @@
+
+
+random_quote =
+

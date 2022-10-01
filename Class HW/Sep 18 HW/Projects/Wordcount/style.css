@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* A video explaining why box-sizing should be set to border-box */
+/* https://www.youtube.com/watch?v=WlGQdgy-M6w */
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* The font inherit property sets every font to have one size and one weight
+any heading tag would look the sane as a normal text, this forces the user to
+use css for everything.
+*/
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: #202124;
+
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    color: #e8eaed
+}
+
+p {
+    color: #ffffff;
+}
+
+
+textarea {
+    resize: none;
+    font-size: 18px;
+}
