@@ -51,5 +51,6 @@ document.querySelector("#reset").addEventListener("click", () => {
     min = 0
     document.querySelector("#sec").innerHTML = "0";
     document.querySelector("#min").innerHTML = "0";
+    document.querySelector("#user-text").innerHTML = "";
     fetchQuotes();
 })
