@@ -49,8 +49,12 @@ p {
     color: #ffffff;
 }
 
+#timer {
+    color: white;
+}
 
 textarea {
     resize: none;
     font-size: 18px;
+
 }

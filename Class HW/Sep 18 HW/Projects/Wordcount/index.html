@@ -12,8 +12,16 @@
 </head>
 <body>
     <h1>Typing Master</h1>
-    <p>ncreasingly, intranets are being used to deliver tools, e.g. collaboration (to facilitate working in groups and teleconferencing) or sophisticated corporate directories, sales and customer relationship management tools, project management etc.,</p>
+    <p id="match-text">Increasingly</p>
+    <button onclick="startTimer()" id="start">Start</button>
+    <button onclick="startTimer()" id="reset">Reset</button><br>
+    <textarea id="user-input" rows="4" cols="50"></textarea>
+    <div id="timer">
+        <span id="min"></span>:<span id="sec"></span>
 
-    <textarea id="user-input" rows = "10" cols = "60" >
+    </div>
+    <p id="user-text"></p>
+
+    <script src="./script.js"></script>    
 </body>
 </html>
