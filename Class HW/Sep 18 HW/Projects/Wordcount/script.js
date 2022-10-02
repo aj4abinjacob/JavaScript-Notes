@@ -20,9 +20,6 @@ document.querySelector("#user-input").addEventListener('keyup', () => {
 let user_input = document.querySelector("#user-input");
 let match_text = document.querySelector("#match-text");
 
-function startTimer() {
-    setInterval(console.log("hello"), 1000)
-}
 
 let sec = 0;
 let min = 0
