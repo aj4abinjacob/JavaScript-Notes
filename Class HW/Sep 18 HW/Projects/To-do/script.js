@@ -18,10 +18,10 @@ function createCard() {
     const input_btn = document.createElement('div');
     input_btn.classList.add('input_controls')
     input_btn.innerHTML = `    
-                        <div class="rm" onclick="rmParent(this)">
+                        <div class="rm" onclick="rmParent(this)" title="Delete">
                             <i class="fa-solid fa-minus"></i>
                         </div>
-                        <div class="done" onclick="addCompletedTask(this)">
+                        <div class="done" onclick="addCompletedTask(this)" title="Done">
                             <i class="fa-solid fa-check"></i>
                         </div
                         `
